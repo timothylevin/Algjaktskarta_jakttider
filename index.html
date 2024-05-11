@@ -13,9 +13,11 @@
         <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
         <link rel="stylesheet" href="css/leaflet-measure.css">
         <style>
-        #map {
-            width: 1401px;
-            height: 817px;
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
         }
         </style>
         <title></title>
@@ -46,12 +48,12 @@
 
             if (e.target.feature.geometry.type === 'LineString' || e.target.feature.geometry.type === 'MultiLineString') {
               highlightLayer.setStyle({
-                color: '#325e58',
+                color: '#ffff00',
               });
             } else {
               highlightLayer.setStyle({
-                fillColor: '#325e58',
-                fillOpacity: 0.35
+                fillColor: '#ffff00',
+                fillOpacity: 1
               });
             }
         }
@@ -154,14 +156,14 @@
                 case '1 september - 8 oktober':
                     return {
                 pane: 'pane_lgjaktJakttider_1',
-                opacity: 0.35,
+                opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.35,
+                fillOpacity: 1,
                 fillColor: 'rgba(233,166,244,1.0)',
                 interactive: true,
             }
@@ -169,14 +171,14 @@
                 case '1 september - 29 oktober':
                     return {
                 pane: 'pane_lgjaktJakttider_1',
-                opacity: 0.35,
+                opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.35,
+                fillOpacity: 1,
                 fillColor: 'rgba(171,71,188,1.0)',
                 interactive: true,
             }
@@ -184,14 +186,14 @@
                 case '1 sept. - 12 nov. & 13 nov. - 3 dec. 2023':
                     return {
                 pane: 'pane_lgjaktJakttider_1',
-                opacity: 0.35,
+                opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.35,
+                fillOpacity: 1,
                 fillColor: 'rgba(120,144,156,1.0)',
                 interactive: true,
             }
@@ -199,14 +201,14 @@
                 case '1 sept. - 12 nov. & 18 dec. 2023 - 31 jan. 2024':
                     return {
                 pane: 'pane_lgjaktJakttider_1',
-                opacity: 0.35,
+                opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.35,
+                fillOpacity: 1,
                 fillColor: 'rgba(120,144,156,1.0)',
                 interactive: true,
             }
@@ -214,14 +216,14 @@
                 case '1 september - 12 november':
                     return {
                 pane: 'pane_lgjaktJakttider_1',
-                opacity: 0.35,
+                opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.35,
+                fillOpacity: 1,
                 fillColor: 'rgba(129,212,250,1.0)',
                 interactive: true,
             }
@@ -229,14 +231,14 @@
                 case '1 september - 31 januari':
                     return {
                 pane: 'pane_lgjaktJakttider_1',
-                opacity: 0.35,
+                opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.35,
+                fillOpacity: 1,
                 fillColor: 'rgba(32,190,234,1.0)',
                 interactive: true,
             }
@@ -244,14 +246,14 @@
                 case '1 sept. - 25 sept. & 10 okt. - 31 jan.':
                     return {
                 pane: 'pane_lgjaktJakttider_1',
-                opacity: 0.35,
+                opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.35,
+                fillOpacity: 1,
                 fillColor: 'rgba(181,242,181,1.0)',
                 interactive: true,
             }
@@ -259,14 +261,14 @@
                 case '1 - 22 sept. &  5 okt. - 31 jan.':
                     return {
                 pane: 'pane_lgjaktJakttider_1',
-                opacity: 0.35,
+                opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.35,
+                fillOpacity: 1,
                 fillColor: 'rgba(114,213,114,1.0)',
                 interactive: true,
             }
@@ -274,14 +276,14 @@
                 case '1 - 23 sept. & 8 okt. - 31 jan.':
                     return {
                 pane: 'pane_lgjaktJakttider_1',
-                opacity: 0.35,
+                opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.35,
+                fillOpacity: 1,
                 fillColor: 'rgba(27,160,27,1.0)',
                 interactive: true,
             }
@@ -289,14 +291,14 @@
                 case '8 oktober - 31 januari':
                     return {
                 pane: 'pane_lgjaktJakttider_1',
-                opacity: 0.35,
+                opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.35,
+                fillOpacity: 1,
                 fillColor: 'rgba(255,213,79,1.0)',
                 interactive: true,
             }
@@ -304,14 +306,14 @@
                 case '8 oktober - 31 januari. Rek: 25 okt. - 31 jan.':
                     return {
                 pane: 'pane_lgjaktJakttider_1',
-                opacity: 0.35,
+                opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.35,
+                fillOpacity: 1,
                 fillColor: 'rgba(255,112,67,1.0)',
                 interactive: true,
             }
