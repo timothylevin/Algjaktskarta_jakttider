@@ -153,3 +153,7 @@
         .leaflet-popup-pane {
             z-index: 700;
         }
+.leaflet-control-layers .leaflet-control-layers-list {
+    max-height: 200px; /* Justera höjden efter behov */
+    overflow-y: auto; /* Lägg till en vertikal scrollbar vid behov */
+}
